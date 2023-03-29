@@ -1,0 +1,81 @@
+og maze
+start postion (190, 190)
+for i in range(0,40):
+  #if statement to add the end of maze
+  if i*10!=190:
+    screen.blit(wallSurface, (i*10,0))
+  else:
+    screen.blit(endSurface, (i*10,0))
+for i in range(0,40):
+  screen.blit(wallSurface, (i*10,390))
+for i in range(0,40):
+  screen.blit(wallSurface, (0,i*10))
+for i in range(0,40):
+  screen.blit(wallSurface, (390,i*10))
+
+for i in range(0,40):
+  screen.blit(wallSurface, (180,i*10))
+for i in range(0,40):
+  screen.blit(wallSurface, (200,i*10))
+
+
+Maze with multuple branching paths
+new ideal starting postion can be (210,270) or (50, 270)
+
+for i in range(0,40):
+  if i*10!=190:
+    screen.blit(wallSurface, (i*10,0))
+  else:
+    screen.blit(endSurface, (i*10,0))
+for i in range(0,40):
+  screen.blit(wallSurface, (i*10,390))
+for i in range(0,40):
+  screen.blit(wallSurface, (0,i*10))
+for i in range(0,40):
+  screen.blit(wallSurface, (390,i*10))
+
+
+for i in range(0,31):
+  if i*10!=190:
+    screen.blit(wallSurface, (180,i*10))
+for i in range(0,29):
+  screen.blit(wallSurface, (200,i*10))
+
+  
+for i in range(21,33):
+  screen.blit(wallSurface, (i*10,280))
+for i in range(19,35):
+  screen.blit(wallSurface, (i*10,300))
+
+  
+for i in range(3,18):
+  if i*10!=100:
+    screen.blit(wallSurface, (i*10,180))
+for i in range(5,18):
+  screen.blit(wallSurface, (i*10,200))
+
+
+for i in range(19, 29):
+  screen.blit(wallSurface, (30,i*10))
+for i in range(21, 29):
+  screen.blit(wallSurface, (50,i*10))
+screen.blit(wallSurface, (40, 280))
+
+
+for i in range(12,18):
+  screen.blit(wallSurface, (90,i*10))
+for i in range(12,18):
+  screen.blit(wallSurface, (110,i*10))
+screen.blit(wallSurface, (100,120))
+
+
+for i in range(26,30):
+  screen.blit(wallSurface, (340,i*10))
+for i in range(20,35):
+  screen.blit(wallSurface, (i*10,260))
+
+screen.blit(robotSurface, (xAxis,yAxis))
+pygame.display.update()
+
+
+[   ['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','e' ,'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'], ['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'p','p','p','p','p','p','p','p','p','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w', 'w','w','w','w','w','w','w','w','w','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w', 'w','w','w','w','w','w','w','w','w','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w', 'w','w','w','w','w','w','w','w','w','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p','p','p','p', 'w','w','w','w','w','w','w','w','w','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p','w','w','p', 'p','p','p','p','p','p','p','p','p','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p','p','w','p', 'w','w','w','w','w','w','w','w','w','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','p','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'], ['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','p', 'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w'],['w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w',  'w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w','w']]

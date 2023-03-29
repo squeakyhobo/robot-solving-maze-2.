@@ -1,0 +1,34 @@
+Steps:
+  1) Implemnt machine learning with its goal being to solve maze in shortest amount of moves
+  2) Make maze more comlicated
+  3) Have ai become effiecient at solving new maze 
+  3) Repeat steps 2 and 3 until maze fills screen
+
+Jobs:
+  screenshot system(done)
+  databases(done)
+  create ai that can interact with the robot and interpretate data(somewhat, need to be able to 
+  properly recongise corners and not go backwards when it reaches one, likely checking length of 
+  the array movableSpaces and seeing if it only contains one element and if it doesn't remove 
+  the direction it just came from and needs way for ai to turn at corners that are not at the 
+  end of the paths)
+
+
+
+
+
+machine learning side of ai:
+  The ai may be able to use data by assigning a proability to continue in same direction and   
+  chnging direction and use some form of randm to pick which one it should do. proability could 
+  be found by finding the proability of changng driection lowers the moves taken below the 
+  mean moves taken and maybe do the same for above the mean moves taken.
+
+
+
+How AI takes data in:
+  takes screenshot of the output screen "maze" and identify blue pixels on the screen 
+  (pottentially using the variable xAxis and yAxis to find the centre of the roborSurface and 
+  than going to those cordinates in the png). Than identify colours that are directly adjacent 
+  to the robotSurface that are red and idetify them as a movable space. Also identify green 
+  pxiels as the end of the maze and pritorise moving there. Wall spaces colour should be ignored 
+  in considering where to go. 
